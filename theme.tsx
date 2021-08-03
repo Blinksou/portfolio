@@ -1,16 +1,16 @@
-import { DefaultTheme } from 'styled-components';
+import { DefaultTheme } from "styled-components";
 
-const white = "#FDFFFF";
+const white = "#f8f8f8";
 
 const theme: DefaultTheme = {
   colors: {
     common: {
-      bg: "linear-gradient(to right top, #232528, #212225, #1e2022, #1c1d20, #1a1b1d, #18181a, #161618, #141315, #110f11, #0c0b0c, #060506, #000000)",
-      black: "#232528",
+      bg: "#11111d",
+      black: "#8d8d8d",
       white: white,
     },
     primary: {
-      main: "#2A2A72",
+      main: "#8282f7",
       contrastText: white,
     },
     secondary: {
@@ -26,6 +26,21 @@ const theme: DefaultTheme = {
     medium: "2em",
     large: "3em",
   },
+  buttonSizes: {
+    sm: "0.6rem 1.5rem",
+    md: "1rem 2rem",
+    lg: "",
+  },
+};
+
+export const devices = {
+  mobileS: `(min-width: 320px)`,
+  mobileM: `(min-width: 375px)`,
+  mobileL: `(min-width: 425px)`,
+  tablet: `(min-width: 768px)`,
+  laptop: `(min-width: 1024px)`,
+  laptopL: `(min-width: 1440px)`,
+  desktop: `(min-width: 2560px)`,
 };
 
 export default theme;

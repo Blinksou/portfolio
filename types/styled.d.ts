@@ -1,4 +1,4 @@
-import 'styled-components';
+import "styled-components";
 
 interface Palette {
   main: string;
@@ -23,6 +23,11 @@ declare module "styled-components" {
       small: string;
       medium: string;
       large: string;
+    };
+    buttonSizes: {
+      sm: string;
+      md: string;
+      lg: string;
     };
   }
 }

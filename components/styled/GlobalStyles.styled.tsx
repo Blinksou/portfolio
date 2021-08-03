@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html,
@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-image: ${(p) => p.theme.colors.common.bg};
+    background: ${(p) => p.theme.colors.common.bg};
     color: ${(p) => p.theme.colors.common.white};
     font-family: ${(p) => p.theme.fonts.regular};
     overflow: hidden;
@@ -21,5 +21,9 @@ export const GlobalStyle = createGlobalStyle`
   
   * {
     box-sizing: border-box;
+  }
+
+  button {
+    border: none;
   }
 `;
